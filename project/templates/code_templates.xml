@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="false" context="newtype_context" deleted="false" description="Newly created files" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.newtype" name="newtype">/*
+ * Class: ${type_name}
+ * 
+ * Created on ${date}
+ * 
+ * (c) Chetan Subhash Patil, unpublished work,
+ * All use, disclosure, and/or reproduction of this material is prohibited
+ * unless authorized in writing.  All Rights Reserved.
+ * Rights in this program belong to:
+ * Chetan Subhash Patil
+ */
+${package_declaration}
+
+${typecomment}
+${type_declaration}</template></templates>
