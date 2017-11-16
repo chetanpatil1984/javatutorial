@@ -1,4 +1,4 @@
-package code;
+package j2se;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.Map;
  * Rights in this program belong to: Chetan Subhash Patil.
  */
 
-// Note that constructors cannot be synchronized — using the synchronized
+// Note that constructors cannot be synchronized ï¿½ using the synchronized
 // keyword with a constructor is a syntax error. Synchronizing constructors
 // doesn't make sense,because only the thread that creates an object should have
 // access to it while it is being constructed.
@@ -183,7 +183,7 @@ public class ThreadTutorials
     
     // Immutable objects (shared resource donot require synchronization)
     
-    // 1. Don't provide "setter" methods — methods that modify fields or objects
+    // 1. Don't provide "setter" methods ï¿½ methods that modify fields or objects
     // referred to by fields.
     // 2. Make all fields final and private.
     // 3. Don't allow subclasses to override methods. The simplest way to do

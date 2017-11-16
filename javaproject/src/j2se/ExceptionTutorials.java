@@ -4,7 +4,7 @@
  * is prohibited unless authorized in writing. All Rights Reserved. Rights in
  * this program belong to: Chetan Subhash Patil
  */
-package code;
+package j2se;
 
 import java.io.IOException;
 import java.net.URI;
