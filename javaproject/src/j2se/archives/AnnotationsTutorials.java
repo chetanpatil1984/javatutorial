@@ -4,7 +4,7 @@
  * is prohibited unless authorized in writing. All Rights Reserved. Rights in
  * this program belong to: Chetan Subhash Patil
  */
-package j2se;
+package j2se.archives;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -21,33 +21,33 @@ import java.util.List;
 @MyAnnotationType(version = 1.1, clients = { "Programs" })
 public class AnnotationsTutorials
 {
-    public void method1()
-    {
-    }
+  public void method1()
+  {
+  }
 }
 
 class AnnotationsTutorials1 extends AnnotationsTutorials
 {
-    public static void main(String[] args)
-    {
-        AnnotationsTutorials1 m = new AnnotationsTutorials1();
-        m.method1();
-    }
-    
-    // Annotation provided by java
-    // annotation tells the compiler to suppress specific warnings that it would
-    // otherwise generate.
-    @SuppressWarnings({ "unchecked", "deprecation" })
-    // annotation informs the compiler that the element is meant to override an
-    // element declared in a superclass.
-    @Override
-    // annotation indicates that the marked element is deprecated and should no
-    // longer be used.
-    @Deprecated
-    public void method1()
-    {
-        List l;
-    }
+  public static void main(String[] args)
+  {
+    AnnotationsTutorials1 m = new AnnotationsTutorials1();
+    m.method1();
+  }
+  
+  // Annotation provided by java
+  // annotation tells the compiler to suppress specific warnings that it would
+  // otherwise generate.
+  @SuppressWarnings({ "unchecked", "deprecation" })
+  // annotation informs the compiler that the element is meant to override an
+  // element declared in a superclass.
+  @Override
+  // annotation indicates that the marked element is deprecated and should no
+  // longer be used.
+  @Deprecated
+  public void method1()
+  {
+    List l;
+  }
 }
 
 // The filename should be named same as public class or interface
@@ -73,28 +73,28 @@ class AnnotationsTutorials1 extends AnnotationsTutorials
 @Retention(RetentionPolicy.SOURCE)
 // simple annotation type
 @interface MyAnnotationType {
-    
-    public enum MyEnum {
-        ONE, TWO, THREE
-    };
-    
-    // Annotation declaration should start with an 'at' sign like @, following
-    // with an interface keyword, following with the annotation name.
-    // Method declarations should not have any parameters.
-    // Method declarations should not have any throws clauses.
-    // Return types of the method should be one of the following:
-    // primitives,String,Class,enum,array of the above types
-    
-    // string type
-    String author() default "n/a";
-    
-    // array type
-    String[] clients() default { "Programs", "GUI", "TestJig" };
-    
-    // enum
-    MyEnum update() default MyEnum.ONE;
-    
-    // double type
-    double version() default 1.0;
-    
+  
+  public enum MyEnum {
+    ONE, TWO, THREE
+  };
+  
+  // Annotation declaration should start with an 'at' sign like @, following
+  // with an interface keyword, following with the annotation name.
+  // Method declarations should not have any parameters.
+  // Method declarations should not have any throws clauses.
+  // Return types of the method should be one of the following:
+  // primitives,String,Class,enum,array of the above types
+  
+  // string type
+  String author() default "n/a";
+  
+  // array type
+  String[] clients() default { "Programs", "GUI", "TestJig" };
+  
+  // enum
+  MyEnum update() default MyEnum.ONE;
+  
+  // double type
+  double version() default 1.0;
+  
 }
