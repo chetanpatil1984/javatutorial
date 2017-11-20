@@ -1,5 +1,6 @@
 #!/bin/sh
 
+export CURRENT_DIR=`pwd`
 export MW_HOME=/scratch/chetpati/OBIMH
 export BI_INSTANCE=${MW_HOME}/instances/instance1
 export WLS_ADMINURL=t3://localhost:7001

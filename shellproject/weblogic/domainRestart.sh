@@ -5,9 +5,9 @@
 
 echo "invoking domain restart"
 
-./stopBiOpmnProcesses.sh
-./stopWeblogic.sh
-./startWeblogic.sh
-./startBiOpmnProcesses.sh
+${CURRENT_DIR}/stopBiOpmnProcesses.sh
+${CURRENT_DIR}/stopWeblogic.sh
+${CURRENT_DIR}/startWeblogic.sh
+${CURRENT_DIR}/startBiOpmnProcesses.sh
 
 echo "invoked domain restart"
