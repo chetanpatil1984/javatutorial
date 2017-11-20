@@ -1,6 +1,9 @@
 #!/bin/sh
 
-. ./setEnv.sh
+if [ -z ${CURRENT_DIR} ]
+  then
+  . ./setEnv.sh
+fi
 . ${MW_HOME}/user_projects/domains/bifoundation_domain/bin/setDomainEnv.sh
 
 echo "invoking domain restart"
