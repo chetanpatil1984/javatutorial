@@ -12,6 +12,11 @@ do
 
   ${CURRENT_DIR}/domainRestart.sh
   ${CURRENT_DIR}/ping.sh
+  if [ $? -eq 0 ]
+    then
+      echo "EXIT: " $?
+      exit
+  fi
 
   echo "issue not reproduced : ${RETRY_COUNT}"
 	RETRY_COUNT=$(($RETRY_COUNT+1))

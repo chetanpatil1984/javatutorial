@@ -15,6 +15,6 @@ do
 		echo "ping bip ${PING_COUNT} status ${STATUS_CODE}"
 	else
 		echo "issue reproduced"
-	  exit
+	  exit 0
 	fi
 done
