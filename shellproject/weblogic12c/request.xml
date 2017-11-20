@@ -4,7 +4,7 @@
       <v2:getReportDefinition>
          <v2:reportAbsolutePath>/Chetan/simple/template.xdo</v2:reportAbsolutePath>
          <v2:userID>weblogic</v2:userID>
-         <v2:password>welcome1</v2:password>
+         <v2:password>signum64</v2:password>
       </v2:getReportDefinition>
    </soapenv:Body>
 </soapenv:Envelope>
