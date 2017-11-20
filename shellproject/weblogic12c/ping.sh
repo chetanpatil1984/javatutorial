@@ -9,5 +9,5 @@ COUNT=1
 while [ "${COUNT}" -le 20 ]
   do
   ${CURRENT_DIR}/curlsoaprequests.sh &
-  COUNT=$(($count+1))
+  COUNT=$(($COUNT+1))
 done
