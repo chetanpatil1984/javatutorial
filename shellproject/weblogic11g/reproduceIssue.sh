@@ -6,12 +6,12 @@ echo "invoking script"
 
 RETRY_COUNT=1
 while true
-do
+  do
 
 	echo "attempting to reproduce issue : ${RETRY_COUNT}"
 
   ${CURRENT_DIR}/domainRestart.sh
-  ${CURRENT_DIR}/ping.sh
+  ${CURRENT_DIR}/pingStatus.sh
   if [ $? -eq 0 ]
     then
       echo "EXIT: " $?
