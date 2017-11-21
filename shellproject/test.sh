@@ -1,4 +1,5 @@
 #!/bin/sh
+
 PING_COUNT=1
 while true
 do
