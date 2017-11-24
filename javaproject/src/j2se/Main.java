@@ -6,6 +6,7 @@
  */
 package j2se;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
@@ -16,53 +17,28 @@ import j2se.code.Snippet1ThreadGroup;
 /**
  * @author chetpati
  */
-public class Main extends Thread
+public class Main
 {
-  
-  private static ThreadGroup tg1 = new ThreadGroup("threadgroup");
-  private static ThreadGroup tg2 = new ThreadGroup("threadgroup");
-  
-  public Main(String string)
-  {
-    super(string);
-  }
-  
-  public Main(ThreadGroup tg, String string)
-  {
-    super(tg,string);
-  }
+
 
   /**
    * @param args
+   * @throws IOException
    */
-  public static void main(String[] args)
+  public static void main(String[] args) throws IOException
   {
-    Thread t1 = new Snippet1ThreadGroup(tg1, "thread");
-    Thread t2 = new Snippet1ThreadGroup(tg2, "thread");
-    t1.start();
-    t2.start();
-  }
-  
-  public void run()
-  {
-    while(true)
+    File f = new File("","test");
+    if(!f.isDirectory())
     {
-      System.out.println(Thread.currentThread().getThreadGroup().getName() + " " + Thread.currentThread().getThreadGroup().activeCount() +  " " + Thread.currentThread().getName() + " " + Thread.currentThread().getId());
+      System.out.println("Directory does not exists " + f.getCanonicalPath());
     }
-  }
-  
-  
-}
+    else
+    {
+      System.out.println("Directory does exists " + f.getCanonicalPath());
+    }
 
-
-class Task implements Callable<List<String>>
-{
-  
-  public List<String> call() throws IOException
-  {
-    return Arrays.asList("Apple","Oranges");
   }
-  
+
 }
 
 
