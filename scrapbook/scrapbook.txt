@@ -4,4 +4,14 @@ chrome --remote-debugging-port=9222 --no-first-run --no-default-browser-check --
 
 firefox.exe -start-debugger-server 1234
 
+Shallow size:
+Shallow size of an object is the amount of memory allocated to store the object itself, not taking into account the referenced objects. Shallow size of a regular (non-array) object depends on the number and types of its fields. Shallow size of an array depends on the array length and the type of its elements (objects, primitive types). Shallow size of a set of objects represents the sum of shallow sizes of all objects in the set.
 
+Retained size:
+Retained size of an object is its shallow size plus the shallow sizes of the objects that are accessible, directly or indirectly, only from this object. In other words, the retained size represents the amount of memory that will be freed by the garbage collector when this object is collected.
+
+Daemon Thread :
+Daemon thread is a low priority thread that runs in background to perform tasks such as garbage collection.They can not prevent the JVM from exiting when all the user threads finish their execution.JVM terminates itself when all user threads finish their execution. If JVM finds running daemon thread, it terminates the thread and after that shutdown itself. JVM does not care whether Daemon thread is running or not. It is an utmost low priority thread.
+
+Memory Managedment
+https://www.journaldev.com/2856/java-jvm-memory-model-memory-management-in-java
