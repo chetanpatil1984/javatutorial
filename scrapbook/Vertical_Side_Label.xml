@@ -1,0 +1,86 @@
+<div id="xdo:parameters" class="xdoParameters">
+	<div id="xdo:parametersCtnr" style="display: block;">
+		<div>
+			<img src="/xmlpserver/resource/blafplus/generic/spacer.gif" alt=""
+				width="1" height="10px" border="0" />
+		</div>
+		<table class="fieldText parameters" summary="" cellspacing="0"
+			role="presentation">
+			<tbody>
+				<tr>
+					<td class="right">
+						<div>
+							<img src="/xmlpserver/resource/blafplus/generic/spacer.gif"
+								alt="" width="1" height="3" border="0" />
+						</div>
+						<label for="_paramsP_ROWNUM">
+							<span class="prompt" title="Incouce Count">Incouce Count</span>
+						</label>
+					</td>
+					<td class="left">
+						<input id="_paramsP_ROWNUM" name="_paramsP_ROWNUM" type="text"
+							class="inputbox" onchange="false"
+							onkeyup="this.title = this.value; Form.isMaxLength(this, 4000);"
+							value="1000" title="1000" size="15" />
+					</td>
+				</tr>
+				<tr>
+					<td class="right">
+						<div>
+							<img src="/xmlpserver/resource/blafplus/generic/spacer.gif"
+								alt="" width="1" height="3" border="0" />
+						</div>
+						<label for="_paramstest1Anchor">
+							<span class="prompt" title="test1">test1</span>
+						</label>
+					</td>
+					<td class="left">
+						<input id="_paramstest1" name="_paramstest1" type="text"
+							class="inputbox" aria-label="test1"
+							onchange="var valid = checkDateRange(this.value,'MM-dd-yyyy','','');if (valid==0){alert(RES_INVALID_DATE_FORMAT);this.value='';}else if (valid == 2){this.value='';}"
+							onblur="false" value="" size="15" />
+						<a href="#" name="_paramstest1Anchor" id="_paramstest1Anchor"
+							onclick="window['_paramstest1Calendar'].select(document.getElementById('_paramstest1'), '_paramstest1Anchor', 'MM-dd-yyyy' , null , null, null, null, true); return false;">
+							<img src="/xmlpserver/theme/alta/images/generic/spacer.gif"
+								class="imgSpacer5" alt="" />
+							<img src="/xmlpserver/theme/alta/images/timedate_ena.png"
+								style="border:0px; vertical-align: middle;"
+								onmouseover="this.src='/xmlpserver/theme/alta/images/timedate_ovr.png'"
+								onmousedown="this.src='/xmlpserver/theme/alta/images/timedate_dwn.png'"
+								onmouseout="this.src='/xmlpserver/theme/alta/images/timedate_ena.png'"
+								alt="Date" />
+						</a>
+						<div id="_paramstest1Calendar"
+							style="position:absolute; visibility:hidden; background-color:white;"></div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table border="0" cellspacing="0" cellpadding="0"
+			class="fieldText parameters" role="presentation">
+			<tbody>
+				<tr>
+					<td>
+					</td>
+					<td>
+						<div class="SideParamApplyButtonCtnr" style="text-align: left; float: right; ">
+							<button title="Apply" id="reportViewApply" class="button"
+								onmouseover="this.className='button_mo'" onmouseout="this.className='button'"
+								onmousedown="this.className='button_md'" onmouseup="this.className='button_mo'"
+								onclick="return run();" type="button">Apply</button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script language="JavaScript" type="text/javascript">window['_paramstest1Calendar']
+		= null;
+
+	</script>
+	<script language="JavaScript" type="text/javascript">var showParam = function(){
+		EventUtils.fireEvent('leftcol_dividerlink', 'click', 'MouseEvents');
+		}
+		var closeParam = showParam;
+	</script>
+</div>
